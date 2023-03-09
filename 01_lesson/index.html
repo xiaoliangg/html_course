@@ -4,20 +4,34 @@ HTML 4.01 规定了三种不同的 声明，分别是：Strict、Transitional �
 而在HTML5中，它不基于SGML，所以不需要引入DTD，仅规定了一种声明：<!DOCTYPE html> -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- 标签是HTML头部的一个辅助性标签，提供了一些元信息（例如针对搜索引擎的页面描述和关键字、
+
+<head>
+    <!-- 标签是HTML头部的一个辅助性标签，提供了一些元信息（例如针对搜索引擎的页面描述和关键字、
             定义页面使用的语言等），它不会显示在客户端，但是会被浏览器解析使用好标签对HTML很有利。 -->
-        <meta charset="UTF-8">
-        <meta name="author" content="lawadeal">
-        <meta name="description" content="This page contains all the things I am learning how to 
+    <meta charset="UTF-8">
+    <meta name="author" content="lawadeal">
+    <meta name="description" content="This page contains all the things I am learning how to 
         create as I learn HTML.">
-        <title>My First Web Page</title>
-        <link rel="icon" href="html5.png" type="image/x-icon">
-        <link rel="stylesheet" href="main.css" type="text/css">
-    </head>
-    <body>
-        <h1>Hello World</h1>
-        <hr>
+    <title>My First Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <hr>
+    <nav>
+        <ul>
+            <li>
+                <a href="#html">html</a>
+            </li>
+            <li>
+                <a href="#vacation">vacation</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+    <section id="html">
         <h2>I'm ready to learn HTML</h2>
         <p>This is my first web page.</p>
 
@@ -28,16 +42,18 @@ HTML 4.01 规定了三种不同的 声明，分别是：Strict、Transitional �
             <li>...I learn more about web dev.</li>
             <li>...I plan out my schedule.</li>
             <li>...I use resources from <abbr title="Mozilla Developer Network">
-                <a href="https://developer.mozilla.org">MDN</a>
+                    <a href="https://developer.mozilla.org">MDN</a>
                 </abbr>.
             </li>
         </ol>
-        <hr>
+    </section>
+    <hr>
+    <section id="vacation">
         <h2>I am also Planning a Vacation</h2>
         <p>I've been working hard and <em>really need a getaway</em>.</p>
         <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
 
-        
+
         <h3>Place I'd like to visit</h3>
         <!--ul means unorder list-->
         <ul>
@@ -50,7 +66,7 @@ HTML 4.01 规定了三种不同的 声明，分别是：Strict、Transitional �
                     beijing<br>
                     xicheng,hebiang
                     wode<br>
-        
+
                 </address>
             </li>
         </ul>
@@ -67,8 +83,9 @@ HTML 4.01 规定了三种不同的 声明，分别是：Strict、Transitional �
         </dl>
 
         <p>Anywhere cold.<strong>No Way!</strong></p>
-        
-        <hr>
-        &lt;&lt;&lt;&copy;<a href="about.html">Dave Gray</a>&gt;&gt;&gt;
-    </body>
+    </section>
+    <hr>
+    &lt;&lt;&lt;&copy;<a href="about.html">Dave Gray</a>&gt;&gt;&gt;
+</body>
+
 </html>
