@@ -7,4 +7,4 @@
  * prettier 
 
  # websit recommend
-html validator websit: [validator.w3.org](validator.w3.org)
+html validator websit: [validator.w3.org](https://validator.w3.org/)
